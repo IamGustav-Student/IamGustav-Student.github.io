@@ -1,0 +1,202 @@
+body {
+    float:left;
+    background-image: url(../Images/body.png);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #808080;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    float:initial;
+}
+
+header {
+    width: 100%;
+    max-width: 2000px;
+    font-family: 'Sitka Banner';
+    display: flex;
+    background-image: url(../Images/header1.png);
+    background-repeat: no-repeat;
+    /*height: 300px;*/
+    justify-content: space-between;
+    /*align-items: center;*/
+}
+    header img {
+        /*max-height: 300px;*/
+        width: 100%;
+        object-fit: cover;
+        opacity: 0.9;
+    }
+
+/*header img{
+        height: 200px;
+    }*/
+
+.logo img {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 24px;
+    padding: 5px;
+/*    align-items: center;*/
+    display: flex;
+    margin: 10px;
+}
+
+nav a {
+    display: flex;
+    float: right;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 30px;
+}
+
+nav {
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    
+}
+  
+        nav li {
+        list-style: none;
+    }
+
+    nav ul {
+        
+        display: flex;
+        gap: 20px;
+    }
+    /*Estilos del contenido central*/
+
+.presentacion {
+    width: 80%;
+    font-size: 30px;
+    font-family: 'Sitka Banner';
+    margin-top: 100px;
+    text-align: center;
+    flex-flow: column;
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+}
+    .presentacion h3 {
+      
+        padding: 5px;
+        color: #000000;
+        justify-content: center;
+        align-items: center;
+}
+
+.ofertas{
+
+    margin: 20px;
+    font-size: 14px;
+    color: #000000;
+    padding: 10px;
+}
+
+
+/*Estilos del Footer*/
+#piepagina {
+    background-color: #ffffff;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.arriba img {
+   /* margin: 0,50px;*/
+    height: 20px;
+    display: flex;
+    float: left;
+    border-radius: 50%;
+}
+/*Estilos de la pagina Productos------------------------------------------------*/
+
+.titulo-productos{
+    
+}
+
+.congelados {
+    margin: 10px;
+    font-family: 'Sitka Banner';
+    padding: 5px;
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 18px;
+    width: 35%;
+    height: 300px;
+}
+.galletitas {
+    margin: 10px;
+    font-family: 'Sitka Banner';
+    padding: 5px;
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 18px;
+    width: 35%;
+    height: 300px;
+}
+.galletitas {
+    margin: 10px;
+    font-family: 'Sitka Banner';
+    padding: 5px;
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 18px;
+    width: 35%;
+    height: 300px;
+}
+.galletitas {
+    margin: 10px;
+    font-family: 'Sitka Banner';
+    padding: 5px;
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 18px;
+    width: 35%;
+    height: 300px;
+}
+.galletitas {
+    margin: 10px;
+    font-family: 'Sitka Banner';
+    padding: 5px;
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 18px;
+    width: 35%;
+    height: 300px;
+}
+.galletitas {
+    margin: 10px;
+    font-family: 'Sitka Banner';
+    padding: 5px;
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 18px;
+    width: 35%;
+    height: 300px;
+}
+.galletitas {
+    margin: 10px;
+    font-family: 'Sitka Banner';
+    padding: 5px;
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 18px;
+    width: 35%;
+    height: 300px;
+}
+
+
+    
