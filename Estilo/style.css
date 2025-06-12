@@ -129,13 +129,19 @@ nav {
     justify-content: space-between;
     
 }
+
 .titulo-productos {
-    font-size: 24px;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
     color: #000000;
 }
+    .titulo-productos:hover {
+        color: #000000;
+        text-decoration: none;
+        box-shadow: 3px 3px grey;
+    }
 .titulo {
     font-size: 16px;
     font-weight: bold;
@@ -149,7 +155,7 @@ nav {
     padding: 5px;
     border: none;
     border-radius: 18px;
-    width: 25%;
+    width: 35%;
     height: auto;
     margin: 10px;
 }
@@ -159,23 +165,61 @@ nav {
         border-radius: 18px;
         padding: 5px, 5px;
     }
-    .galletitas {
-        background-color: white;
-        box-shadow: 1px 1px 10px grey;
-        padding: 5px;
-        border: none;
-        border-radius: 18px;
-        width: 25%;
+.carnes-pescados {
+    background-color: white;
+    box-shadow: 1px 1px 10px grey;
+    padding: 5px;
+    border: none;
+    border-radius: 18px;
+    width: 35%;
+    height: auto;
+    margin: 10px;
+}
+.carnes-pescados img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    padding: 5px, 5px;
+}
+.almacen {
+    background-color: white;
+    box-shadow: 1px 1px 10px grey;
+    padding: 5px;
+    border: none;
+    border-radius: 18px;
+    width: 35%;
+    height: auto;
+    margin: 5px;
+}
+    .almacen img {
+        width: 100%;
         height: auto;
-        margin: 10px;
-    }
-.galletitas {
+        border-radius: 18px;
+        padding: 5px, 5px;
+}
+.limpieza {
     background-color: white;
     box-shadow: 1px 1px 10px grey;
     padding: 5px;
     border: none;
     border-radius: 18px;
-    width: 25%;
+    width: 35%;
+    height: auto;
+    margin: 10px;
+}
+.limpieza img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    padding: 5px, 5px;
+}
+/*.galletitas {
+    background-color: white;
+    box-shadow: 1px 1px 10px grey;
+    padding: 5px;
+    border: none;
+    border-radius: 18px;
+    width: 35%;
     height: auto;
     margin: 10px;
 }
@@ -198,27 +242,7 @@ nav {
     width: 25%;
     height: auto;
     margin: 10px;
-}
-.galletitas {
-    background-color: white;
-    box-shadow: 1px 1px 10px grey;
-    padding: 5px;
-    border: none;
-    border-radius: 18px;
-    width: 25%;
-    height: auto;
-    margin: 10px;
-}
-.galletitas {
-    background-color: white;
-    box-shadow: 1px 1px 10px grey;
-    padding: 5px;
-    border: none;
-    border-radius: 18px;
-    width: 25%;
-    height: auto;
-    margin: 10px;
-}
+}*/
 
 
     
