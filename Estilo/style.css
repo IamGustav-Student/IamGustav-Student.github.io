@@ -123,79 +123,101 @@ nav {
 }
 /*Estilos de la pagina Productos------------------------------------------------*/
 
-.titulo-productos{
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.titulo-productos {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #000000;
+}
+.titulo {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
     
 }
 
-.congelados {
-    margin: 10px;
-    font-family: 'Sitka Banner';
+.frutas-verduras {
+    background-color: white;
+    box-shadow: 1px 1px 10px grey;
     padding: 5px;
-    display: flex;
-    border: 2px solid gray;
+    border: none;
     border-radius: 18px;
-    width: 35%;
-    height: 300px;
+    width: 25%;
+    height: auto;
+    margin: 10px;
+}
+    .frutas-verduras img {
+        width: 100%;
+        height: auto;
+        border-radius: 18px;
+        padding: 5px, 5px;
+    }
+    .galletitas {
+        background-color: white;
+        box-shadow: 1px 1px 10px grey;
+        padding: 5px;
+        border: none;
+        border-radius: 18px;
+        width: 25%;
+        height: auto;
+        margin: 10px;
+    }
+.galletitas {
+    background-color: white;
+    box-shadow: 1px 1px 10px grey;
+    padding: 5px;
+    border: none;
+    border-radius: 18px;
+    width: 25%;
+    height: auto;
+    margin: 10px;
 }
 .galletitas {
-    margin: 10px;
-    font-family: 'Sitka Banner';
+    background-color: white;
+    box-shadow: 1px 1px 10px grey;
     padding: 5px;
-    display: flex;
-    border: 2px solid gray;
+    border: none;
     border-radius: 18px;
-    width: 35%;
-    height: 300px;
+    width: 25%;
+    height: auto;
+    margin: 10px;
 }
 .galletitas {
-    margin: 10px;
-    font-family: 'Sitka Banner';
+    background-color: white;
+    box-shadow: 1px 1px 10px grey;
     padding: 5px;
-    display: flex;
-    border: 2px solid gray;
+    border: none;
     border-radius: 18px;
-    width: 35%;
-    height: 300px;
+    width: 25%;
+    height: auto;
+    margin: 10px;
 }
 .galletitas {
-    margin: 10px;
-    font-family: 'Sitka Banner';
+    background-color: white;
+    box-shadow: 1px 1px 10px grey;
     padding: 5px;
-    display: flex;
-    border: 2px solid gray;
+    border: none;
     border-radius: 18px;
-    width: 35%;
-    height: 300px;
+    width: 25%;
+    height: auto;
+    margin: 10px;
 }
 .galletitas {
-    margin: 10px;
-    font-family: 'Sitka Banner';
+    background-color: white;
+    box-shadow: 1px 1px 10px grey;
     padding: 5px;
-    display: flex;
-    border: 2px solid gray;
+    border: none;
     border-radius: 18px;
-    width: 35%;
-    height: 300px;
-}
-.galletitas {
+    width: 25%;
+    height: auto;
     margin: 10px;
-    font-family: 'Sitka Banner';
-    padding: 5px;
-    display: flex;
-    border: 2px solid gray;
-    border-radius: 18px;
-    width: 35%;
-    height: 300px;
-}
-.galletitas {
-    margin: 10px;
-    font-family: 'Sitka Banner';
-    padding: 5px;
-    display: flex;
-    border: 2px solid gray;
-    border-radius: 18px;
-    width: 35%;
-    height: 300px;
 }
 
 
