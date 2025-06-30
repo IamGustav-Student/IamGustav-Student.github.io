@@ -165,14 +165,13 @@ nav {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     align-content: center;
-    margin:100px auto 0px auto;
 }
 
 .elementos {
     display: flex;
     width: 100%; /* 4 imágenes -> 100% x 4 */
     animation: slide 30s infinite;
-
+    margin:100px auto 0px auto;
 }
 
     .elementos img {
