@@ -1,3 +1,4 @@
+/*Estilo del Body-----------------------------------------------------------------*/
 body {
     float:left;
     background-image: url(../Images/body.png);
@@ -10,7 +11,28 @@ body {
     grid-template-rows: auto 1fr auto;
     float:initial;
 }
+/*Estilos del contenido central-----------------------------------------------------------*/
 
+.presentacion {
+    width: 80%;
+    font-size: 30px;
+    font-family: 'Sitka Banner';
+    margin-top: 100px;
+    text-align: center;
+    flex-flow: column;
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+}
+
+    .presentacion h3 {
+        padding: 5px;
+        color: #000000;
+        justify-content: center;
+        align-items: center;
+    }
+
+/* Estilos del Header-----------------------------------------------------------*/
 header {
     width: 100%;
     max-width: 2000px;
@@ -48,7 +70,7 @@ header {
     display: flex;
     margin: 10px;
 }
-
+/*Estilos del Menu de Navegacion---------------------------------------------------*/
 nav a {
     display: flex;
     float: right;
@@ -75,26 +97,7 @@ nav {
         display: flex;
         gap: 20px;
     }
-    /*Estilos del contenido central*/
-
-.presentacion {
-    width: 80%;
-    font-size: 30px;
-    font-family: 'Sitka Banner';
-    margin-top: 100px;
-    text-align: center;
-    flex-flow: column;
-    color: #000000;
-    justify-content: center;
-    align-items: center;
-}
-    .presentacion h3 {
-      
-        padding: 5px;
-        color: #000000;
-        justify-content: center;
-        align-items: center;
-}
+/*EStilo del Menu Ofertas-----------------------------------------------------------*/
 
 .ofertas{
 
@@ -105,7 +108,7 @@ nav {
 }
 
 
-/*Estilos del Footer*/
+/*Estilos del Footer----------------------------------------------------------------*/
 #piepagina {
     background-color: #ffffff;
     height: 100px;
@@ -115,7 +118,10 @@ nav {
 
 }
 .arriba img {
-   /* margin: 0,50px;*/
+    /* margin: 0,50px;*/
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     height: 20px;
     display: flex;
     float: left;
@@ -138,6 +144,7 @@ nav {
     color: #000000;
 }
     .titulo-productos:hover {
+        max-height: 50px;
         color: #000000;
         text-decoration: none;
         box-shadow: 3px 3px grey;
@@ -148,6 +155,129 @@ nav {
     text-align: center;
     
 }
+/*--------------------------------------------------------------------*/
+.carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 99%;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+ 
+}
+
+.elementos {
+    display: flex;
+    width: 100%; /* 4 imágenes -> 100% x 4 */
+    animation: slide 30s infinite;
+
+}
+
+    .elementos img {
+        width: 50%;
+        object-fit: cover;
+        justify-content: center;
+    }
+#img1 div {
+    bottom: auto;
+    position: absolute;
+    width: 300px;
+}
+#img1 {
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+#img1 {
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+#img1 {
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+#img1 {
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+#img1 {
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+#img1 {
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+#img1 {
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+#img1 {
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+#img1 {
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+#img1 {
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    20% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    95% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+
+/*--------------------------------------------------------------------*/
 
 .frutas-verduras {
     background-color: white;
@@ -212,41 +342,11 @@ nav {
     height: auto;
     border-radius: 18px;
     padding: 5px, 5px;
-}
-/*.galletitas {
-    background-color: white;
-    box-shadow: 1px 1px 10px grey;
-    padding: 5px;
-    border: none;
-    border-radius: 18px;
-    width: 35%;
-    height: auto;
-    margin: 10px;
-}
-.galletitas {
-    background-color: white;
-    box-shadow: 1px 1px 10px grey;
-    padding: 5px;
-    border: none;
-    border-radius: 18px;
-    width: 25%;
-    height: auto;
-    margin: 10px;
-}
-.galletitas {
-    background-color: white;
-    box-shadow: 1px 1px 10px grey;
-    padding: 5px;
-    border: none;
-    border-radius: 18px;
-    width: 25%;
-    height: auto;
-    margin: 10px;
-}*/
+} 
 /*Estilos del Formulario contacto*/
 .contacto {
     background: #fff;
-    max-width: 400px;
+    max-width: 350px;
     margin: 50px auto;
     padding: 30px 40px;
     border-radius: 8px;
@@ -265,6 +365,7 @@ nav {
 }
 
 .formulario input {
+   
     background-color: #a6dbf3;
     width: 100%;
     padding: 8px 10px;
@@ -275,7 +376,12 @@ nav {
     font-size: 1em;
 }
 .formulario textarea {
+    max-width: 100%;
+    min-width: 350px;
+    max-height: 400px;
+    min-height: 50px;
     background-color: #a6dbf3;
+    border-radius: 4px;
 }
 
 .formulario button {
