@@ -1,64 +1,47 @@
 /*Estilo del Body-----------------------------------------------------------------*/
 body {
-    float:left;
     background-image: url(../Images/body.png);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #808080;
+    background-color: #f4f4f4; /* CAMBIO MEJORA: color más claro para mejor contraste */
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
-    float:initial;
 }
+
 /*Estilos del contenido central-----------------------------------------------------------*/
-
 .presentacion {
-    width: 80%;
-    font-size: 30px;
-    font-family: 'Sitka Banner';
-    margin:100px auto 0px auto;
+    width: 90%; /* CAMBIO MEJORA: más ancho en móviles */
+    max-width: 800px; /* CAMBIO MEJORA: límite para pantallas grandes */
+    font-size: 2em;
+    font-family: 'Sitka Banner', Arial, sans-serif;
+    margin: 100px auto 0 auto;
     text-align: center;
-    flex-flow: column;
-    color: #000000;
-    justify-content: center;
-    align-items: center;
+    color: #222; /* CAMBIO MEJORA: mejor contraste */
 }
 
-    .presentacion h3 {
-        padding: 5px;
-        color: #000000;
-        justify-content: center;
-        align-items: center;
-    }
+.presentacion h3 {
+    padding: 5px;
+    color: #333;
+}
 
 /* Estilos del Header-----------------------------------------------------------*/
 header {
     width: 100%;
-    max-width: 2000px;
-    font-family: 'Sitka Banner';
+    font-family: 'Sitka Banner', Arial, sans-serif;
     display: flex;
+    flex-wrap: wrap; /* CAMBIO MEJORA: responsividad */
     background-image: url(../Images/header1.png);
     background-repeat: no-repeat;
-    /*height: 300px;*/
     justify-content: space-between;
-    /*align-items: center;*/
+    align-items: center; /* CAMBIO MEJORA: alineación vertical */
+    padding: 10px 0; /* CAMBIO MEJORA: espacio interno */
 }
-    header img {
-        /*max-height: 300px;*/
-        width: 100%;
-        object-fit: cover;
-        opacity: 0.9;
-    }
-
-/*header img{
-        height: 200px;
-    }*/
 
 .logo img {
-    display: flex;
-    height: 100px;
-    width: 100px;
+    height: 80px; /* CAMBIO MEJORA: tamaño más uniforme */
+    width: 80px;
     border-radius: 50%;
 }
 
@@ -66,326 +49,181 @@ header {
     font-weight: 600;
     font-size: 24px;
     padding: 5px;
-/*    align-items: center;*/
     display: flex;
+    align-items: center;
     margin: 10px;
 }
+
 /*Estilos del Menu de Navegacion---------------------------------------------------*/
 nav a {
-    display: flex;
-    float: right;
     font-weight: 600;
-    color: #ffffff;
+    color: #0078d7; /* CAMBIO MEJORA: color azul para enlaces */
+    background: #fff; /* CAMBIO MEJORA: fondo blanco para botones */
+    border-radius: 6px; /* CAMBIO MEJORA: bordes redondeados */
     text-decoration: none;
     padding: 10px 20px;
-    font-size: 30px;
+    font-size: 1.2em;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background: #0078d7; /* CAMBIO MEJORA: efecto hover */
+    color: #fff;
 }
 
 nav {
-    float: right;
     margin-right: 30px;
     margin-top: 10px;
-    
 }
-  
-        nav li {
-        list-style: none;
-    }
 
-    nav ul {
-        
-        display: flex;
-        gap: 20px;
-    }
+nav li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
 /*EStilo del Menu Ofertas-----------------------------------------------------------*/
-
-.ofertas{
-
-    margin: 20px;
-    font-size: 14px;
-    color: #000000;
+.ofertas {
+    margin: 20px auto;
+    font-size: 1.1em;
+    color: #222;
     padding: 10px;
+    max-width: 600px; /* CAMBIO MEJORA: ancho máximo */
+    background: #fff; /* CAMBIO MEJORA: fondo blanco */
+    border-radius: 8px; /* CAMBIO MEJORA: bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* CAMBIO MEJORA: sombra suave */
 }
-
 
 /*Estilos del Footer----------------------------------------------------------------*/
 #piepagina {
-    background-color: #ffffff;
-    height: 100px;
+    background-color: #0078d7; /* CAMBIO MEJORA: color corporativo */
+    color: #fff; /* CAMBIO MEJORA: texto blanco */
+    height: 80px; /* CAMBIO MEJORA: altura más compacta */
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-size: 1em;
+    position: relative;
 }
+
 .arriba img {
-    /* margin: 0,50px;*/
     position: fixed;
     bottom: 20px;
     right: 20px;
-    height: 20px;
-    display: flex;
-    float: left;
+    height: 40px; /* CAMBIO MEJORA: icono más visible */
     border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* CAMBIO MEJORA: sombra */
+    z-index: 1000;
 }
+
 /*Estilos de la pagina Productos------------------------------------------------*/
-
-.productos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-}
-
 .titulo-productos {
-    font-size: 50px;
+    font-size: 2.5em;
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
-    color: #000000;
+    color: #0078d7; /* CAMBIO MEJORA: color corporativo */
+    text-shadow: 1px 1px 2px #ccc; /* CAMBIO MEJORA: sombra de texto */
 }
-    .titulo-productos:hover {
-        max-height: 50px;
-        color: #000000;
-        text-decoration: none;
-        box-shadow: 3px 3px grey;
-    }
+
+.titulo-productos:hover {
+    color: #00ff90;
+    box-shadow: 3px 3px 10px #0078d7; /* CAMBIO MEJORA: sombra azul */
+}
+
 .titulo {
-    font-size: 16px;
+    font-size: 1.1em;
     font-weight: bold;
     text-align: center;
-    
 }
-/*--------------------------------------------------------------------*/
+
+/* Carrusel mejorado */
 .carrusel {
     position: relative;
     width: 100%;
-    max-width: 99%;
-    margin: 10px;
+    max-width: 900px; /* CAMBIO MEJORA: ancho máximo */
+    margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    align-content: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    background: #fff; /* CAMBIO MEJORA: fondo blanco */
 }
 
 .elementos {
     display: flex;
-    width: 100%; /* 4 imágenes -> 100% x 4 */
-    animation: slide 30s infinite;
-    margin:100px auto 0px auto;
+    gap: 10px; /* CAMBIO MEJORA: espacio entre imágenes */
+    justify-content: center; /* CAMBIO MEJORA: centrado */
+    align-items: center;
+    flex-wrap: wrap; /* CAMBIO MEJORA: responsividad */
+    margin: 0 auto;
 }
 
-    .elementos img {
-        width: 50%;
-        object-fit: cover;
-        justify-content: center;
-    }
-#img1 div {
-    bottom: auto;
-    position: absolute;
-    width: 300px;
-}
-#img1 {
+.elementos img {
+    width: 180px; /* CAMBIO MEJORA: tamaño uniforme */
+    height: 120px;
+    object-fit: cover;
     border-radius: 10px;
-    padding: 5px;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
-}
-#img1 {
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
-}
-#img1 {
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
-}
-#img1 {
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
-}
-#img1 {
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
-}
-#img1 {
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
-}
-#img1 {
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
-}
-#img1 {
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
-}
-#img1 {
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
-}
-#img1 {
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-
-
-@keyframes slide {
-    0% {
-        transform: translateX(0%);
-    }
-
-    20% {
-        transform: translateX(0%);
-    }
-
-    25% {
-        transform: translateX(-100%);
-    }
-
-    45% {
-        transform: translateX(-100%);
-    }
-
-    50% {
-        transform: translateX(-200%);
-    }
-
-    70% {
-        transform: translateX(-200%);
-    }
-
-    75% {
-        transform: translateX(-300%);
-    }
-
-    95% {
-        transform: translateX(-300%);
-    }
-
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-
-
-/*--------------------------------------------------------------------*/
-
-.frutas-verduras {
-    background-color: white;
-    box-shadow: 1px 1px 10px grey;
-    padding: 5px;
-    border: none;
-    border-radius: 18px;
-    width: 10%;
-    height: auto;
-    margin: 10px;
-}
-    .frutas-verduras img {
-        width: 100%;
-        height: auto;
-        border-radius: 18px;
-        padding: 5px, 5px;
-    }
-.carnes-pescados {
-    background-color: white;
-    box-shadow: 1px 1px 10px grey;
-    padding: 5px;
-    border: none;
-    border-radius: 18px;
-    width: 10%;
-    height: auto;
-    margin: 10px;
-}
-.carnes-pescados img {
-    width: 100%;
-    height: auto;
-    border-radius: 18px;
-    padding: 5px, 5px;
-}
-.almacen {
-    background-color: white;
-    box-shadow: 1px 1px 10px grey;
-    padding: 5px;
-    border: none;
-    border-radius: 18px;
-    width: 10%;
-    height: auto;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
     margin: 5px;
+    transition: transform 0.2s;
 }
-    .almacen img {
-        width: 100%;
-        height: auto;
-        border-radius: 18px;
-        padding: 5px, 5px;
+
+.elementos img:hover {
+    transform: scale(1.08); /* CAMBIO MEJORA: efecto hover */
 }
-.limpieza {
-    background-color: white;
-    box-shadow: 1px 1px 10px grey;
+
+/* Elimina duplicados de #img1 */
+#img1 {
+    border-radius: 10px;
     padding: 5px;
-    border: none;
-    border-radius: 18px;
-    width: 10%;
-    height: auto;
-    margin: 10px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
 }
-.limpieza img {
-    width: 100%;
-    height: auto;
-    border-radius: 18px;
-    padding: 5px, 5px;
-} 
+
 /*Estilos del Formulario contacto*/
 .contacto {
     background: #fff;
-    max-width: 350px;
+    max-width: 400px; /* CAMBIO MEJORA: más ancho */
     margin: 50px auto;
     padding: 30px 40px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0, 0.3);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* CAMBIO MEJORA: sombra más visible */
 }
-    .contacto h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        color: #333;
-    }
-.formulario label {
 
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0078d7; /* CAMBIO MEJORA: color corporativo */
+}
+
+.formulario label {
     display: block;
     margin-bottom: 6px;
     color: #555;
 }
 
-.formulario input {
-   
-    background-color: #a6dbf3;
+.formulario input,
+.formulario textarea {
+    background-color: #eaf6fb; /* CAMBIO MEJORA: color más suave */
     width: 100%;
     padding: 8px 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #0078d7; /* CAMBIO MEJORA: borde azul */
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 1em;
 }
+
 .formulario textarea {
-    max-width: 100%;
-    min-width: 350px;
-    max-height: 400px;
-    min-height: 50px;
-    background-color: #a6dbf3;
-    border-radius: 4px;
+    min-height: 80px; /* CAMBIO MEJORA: altura mínima */
+    resize: vertical; /* CAMBIO MEJORA: permite redimensionar */
 }
 
 .formulario button {
-
     width: 100%;
     padding: 10px;
     background: #0078d7;
@@ -396,9 +234,35 @@ nav {
     cursor: pointer;
     transition: background 0.2s;
 }
+
 .formulario button:hover {
-            background: #00ff90;
-        }
+    background: #00ff90;
+    color: #222; /* CAMBIO MEJORA: texto oscuro en hover */
+}
 
-
-    
+/* CAMBIO MEJORA: Responsividad general */
+@media (max-width: 700px) {
+    .presentacion {
+        font-size: 1.2em;
+        margin-top: 40px;
+    }
+    .carrusel {
+        max-width: 100%;
+    }
+    .elementos img {
+        width: 100px;
+        height: 70px;
+    }
+    .contacto {
+        max-width: 95%;
+        padding: 10px;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
